@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ask For Date</title>
+    <style>
+      /* Add button styling directly for better visibility */
+      .btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin: 1rem;
+      }
+
+      .btn-yes {
+        background: linear-gradient(90deg, #4caf50, #8bc34a);
+        color: white;
+        box-shadow: 0 4px 10px rgba(76, 175, 80, 0.5);
+      }
+
+      .btn-yes:hover {
+        background: linear-gradient(90deg, #43a047, #7cb342);
+        transform: scale(1.1);
+      }
+
+      .btn-no {
+        background: linear-gradient(90deg, #f44336, #e57373);
+        color: white;
+        box-shadow: 0 4px 10px rgba(244, 67, 54, 0.5);
+      }
+
+      .btn-no:hover {
+        background: linear-gradient(90deg, #d32f2f, #ef5350);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hey baaby girl</h1>
+    <div class="container" id="container">
+      <h1>Are you really a good person</h1>
+      <h2>If yes choose your choice</h2>
+      <button class="btn btn-yes">Yes</button>
+      <button class="btn btn-no">No</button>
+    </div>
+    <script>
+      // JavaScript to handle the redirection
+      document.querySelector('.btn-yes').addEventListener('click', () => {
+        window.location.href = 'other.html'; // Redirects to other.html
+      });
+    </script>
+  </body>
+</html>
